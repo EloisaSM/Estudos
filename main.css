@@ -1,0 +1,17 @@
+.containermenu{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+}
+
+.background{
+    background-image: url(https://i.pinimg.com/474x/db/2d/28/db2d283d69745a5846bb5d17b70985a1.jpg);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: blue;
+}
