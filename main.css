@@ -15,6 +15,30 @@
     src: url(fonts/josefin-sans-bold-2.ttf); 
 }
 
+.icons{
+    padding: 7px 1px 5px 3px;
+}
+
+.input{
+    width: 25%;
+    background:#5f438b;
+    height: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px 15px 5px 10px;
+}
+
+.inputsearch{
+    font-family: "inconsolata";
+    color: black;
+    border: none;
+    background: #5f438b;
+}
+::placeholder{
+    color: black;
+    opacity: 1;
+}
+
 .h1{
     font-family: "Josefin Sans";
     font-size: 60px;
@@ -25,17 +49,21 @@
 .header{
     display: flex;
     justify-content: space-between;
-    padding: 10px 40px 10px 40px;
-    background: blue;
+    padding: 15px 40px 10px 40px;
+    background: #ac86e7;
     box-sizing: border-box;
-    height: 50px;
+    height: 70px;
+}
 
-} 
-
-.header a{
+.icons-container a{
     margin-left: 5px;
     opacity: 0.5;
+
 }
+.icons-container a:hover{
+    opacity: 1;
+}
+
 
 .submenu{
     text-align: center;
@@ -54,8 +82,12 @@
     margin-left: 10px;
     font-family: 'Inconsolata', monospace;
     font-size: 17px;
-    opacity: 0.5;;
+    opacity: 0.5;
 
+}
+
+.submenu a:hover{
+    opacity: 1;
 }
 
 .carrosel{
@@ -79,6 +111,9 @@
     height: 1000px;
 }
 
+.posts a{
+    display: block;
+}
 .category{
     background: purple;
     width: 40%;
