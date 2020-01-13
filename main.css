@@ -7,7 +7,14 @@ a{
     width: 80%;
     background-color: rgb(255, 255, 255) ;
     font-family: "Inconsolata";
+}
 
+.containermenu li{
+    list-style-type: none;
+}
+
+.containermenu ul{
+    padding-left: 0px;
 }
 
 .background{
@@ -159,7 +166,7 @@ h1, h2, h3, h4{
 
 .sidebar{
     width: 32%;
-    height: 1000px;
+    height:  1141px;
     margin-right: 66px;
 }
 
@@ -254,18 +261,17 @@ h1, h2, h3, h4{
 }
 
 .Popularposts{
-    width: 81%;
-    margin-left: 30px;
-    margin-top: 52px;
-    padding-left: 15px;
+    width: 88%;
+    margin: 51px 0px 32px 23px;
 }
 
 .Popularposts h3{
     padding-bottom: 15px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #ccc;
+
 }
 
-.Popularposts img{
+.images{
     width: 89px;
     height: 75px; 
 }
@@ -277,9 +283,6 @@ h1, h2, h3, h4{
     margin-bottom: 27px;
 }
 
-.Popularposts li{
-    list-style: none;
-}
 
 .Title-popularposts{
     margin: -20px 0px 0px 27px;
@@ -288,7 +291,80 @@ h1, h2, h3, h4{
 .Title-popularposts p{
     font-size: 13px;
 }
-.footer{
-    background-color: black;
-    height: 600px;
+
+.sidebar-categories{
+    border-bottom: 1px solid #ccc;
+    padding: 0px 0px 20px 0px;
+    margin-left: 50px;
+    
 }
+
+.categories {
+    display: block;
+    width: 96%;
+}
+
+.categories-container{
+    display: flex;
+    border-bottom: 1px dotted #ccc;
+    justify-content: space-between;
+    color: #6610f2;
+}
+
+.numbers{
+    color: #ccc;
+}
+.numbers:hover{
+    color: black;
+}
+
+.footer{
+    background-color: #262626;
+    height: 600px;
+    color: #fff;
+    display: flex;
+    padding-top: 70px;
+}
+
+
+
+.Aboutus{
+    width: 40%;
+    margin: 0px 0px 0px 72px;
+}
+
+.Aboutus-container{
+    width: 305px;
+    box-sizing: border-box;
+    padding: 19px 0px 0px 0px;
+    line-height: 31px;
+}
+
+.Aboutus img{
+    width: 350px;
+    height: 288px;
+}
+
+.Quicklinks-social{
+    width: 30%;
+    margin-left: 150px
+}
+
+.Quicklinks-social a{
+    color: #fff;
+}
+
+.Latest-posts{
+    width: 30%;
+}
+
+.Latest-posts a{
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.footer  a:hover{
+    opacity: 0.5;
+}   
+
