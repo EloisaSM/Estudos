@@ -5,7 +5,7 @@ a{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    background-color: rgb(255, 255, 255) ;
+    background-color: #fff;
     font-family: "Inconsolata";
 }
 
@@ -86,10 +86,10 @@ h1, h2, h3, h4{
 }
 
 
-.submenu a{
+.submenu-bar{
 
     color: black;
-    margin-left: 10px;
+    margin-left: 28px;
     font-family: 'Inconsolata', monospace;
     font-size: 17px;
     opacity: 0.5;
@@ -107,20 +107,46 @@ h1, h2, h3, h4{
     justify-content: center;
 }
 
-.submenu-list li{
-    position: relative;
-}
-
 .submenu-list li ul{
     position: absolute;
     display: block;
     background: white;
-    width: 90px;
-    border: 1px solid black;
-    -webkit-box-shadow: -1px 2px 10px 0px rgba(133,121,133,1);
-    -moz-box-shadow: -1px 2px 10px 0px rgba(133,121,133,1);
-    box-shadow: -1px 2px 10px 0px rgba(133,121,133,1);
+    width: 167px;
+    box-shadow: -1px -7px 24px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px -7px 24px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -7px 24px -5px rgba(0,0,0,0.75);
+    margin: 28px 0px 0px 28px;
+    height: 491px;
 }
+
+
+.dropdown {
+    position: relative;
+    padding: 14px 54px 17px 4px;
+    margin: 13px 0px 0px 0px;
+    box-sizing: border-box;
+    height: 47px;
+    width: 167px;
+}
+
+.dropdown:hover{
+    background: #6610f2;
+    color: white;
+}
+
+.arrow-up{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #fcfdff transparent;
+    position: absolute;
+    margin: 19px 1px 0px 40px;
+    z-index: 2;
+
+}
+
+
 
 /*  .submenu-list li ul:hover li{
     background: blueviolet;
