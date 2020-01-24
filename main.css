@@ -4,7 +4,7 @@ a{
 .containermenu{
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 1250px;
     background-color: #fff;
     font-family: "Inconsolata";
 }
@@ -15,6 +15,7 @@ a{
 
 .containermenu ul{
     padding-left: 0px;
+    margin-top: 24px;
 }
 
 .background{
@@ -76,7 +77,7 @@ h1, h2, h3, h4{
 
 .submenu{
     text-align: center;
-    padding-top: 30px;
+    padding-top: 65px;
     box-sizing: border-box;
     border-bottom: 1px solid gray;
     height: 250px;
@@ -118,6 +119,7 @@ h1, h2, h3, h4{
     margin: 28px 0px 0px 28px;
     height: 491px;
     text-align: left;
+    z-index: 2;
 }
 
 
@@ -144,36 +146,58 @@ h1, h2, h3, h4{
     border-color: transparent transparent #fcfdff transparent;
     position: absolute;
     margin: 19px 1px 0px 40px;
-    z-index: 2;
+    z-index: 4;
 
 }
-
-
-
-/*  .submenu-list li ul:hover li{
-    background: blueviolet;
-
-}*/
 
 .submenu-list li:hover ul, .submenu-list li.hover ul{
     display: block;
 }
 
 
-.carrosel{
-    background: green;
+.carousel{
     height: 500px;
     margin-top: 100px;
     margin-bottom: 80px;
     width: 89%;
     margin-left: auto;
     margin-right: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-carousel{
+    position: relative;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 1110px;
+}
+
+.carousel-text {
+    width: 50%;
+    height: 217px;
+    color: white;
+    position: absolute;
+    top: 170px;
+    left: 120px;
+}
+
+.tag{
+    background: #6610f2;
+    color: white;
+    width: 12%;
+    height: 21px;
+    margin-bottom: 43px;
+    border-radius: 1px;
+    box-sizing: border-box;
+    padding: 5px 0px 0px 5px;
+    font-size: 12px;
 }
 
 .ultimos-posts{
     padding: 10px 6px 0px 21px;
     margin-left: 39px;
-    /* width: 200px; */
     font-size: 27px;
 }
 
@@ -196,7 +220,7 @@ h1, h2, h3, h4{
     margin-top: 15px;
     color: black;
     font-size: 12px;
-    height: 299px;
+    height: 292px;
 }
 
 .post:hover{
@@ -220,6 +244,22 @@ h1, h2, h3, h4{
 .post-container img{
     width: 35px;
     border-radius: 50%;
+}
+
+.title{
+    display: flex;
+    height: 42px;
+    box-sizing: border-box;
+    padding: 8px 0px 0px 0px;
+}
+
+.title p{
+    margin: 5px;
+}
+
+.post-container h2{
+    box-sizing: border-box;
+    padding: 0px 0px 0px 9px;
 }
 
 
@@ -330,7 +370,11 @@ h1, h2, h3, h4{
 
 }
 
-.images{
+.Popularposts ul{
+    padding-left: 28px;
+}
+
+.size{
     width: 89px;
     height: 75px; 
 }
@@ -354,7 +398,7 @@ h1, h2, h3, h4{
 .sidebar-categories{
     border-bottom: 1px solid #ccc;
     padding: 0px 0px 20px 0px;
-    margin-left: 50px;
+    margin-left: 40px;
     
 }
 
@@ -368,13 +412,19 @@ h1, h2, h3, h4{
     border-bottom: 1px dotted #ccc;
     justify-content: space-between;
     color: #6610f2;
+    margin: 0px -8px 0px 44px;
+}
+
+.categories-container:hover p{
+    color:#4709ac;;
 }
 
 .numbers{
-    color: #ccc;
+    color:#ccc;
 }
-.numbers:hover{
-    color: black;
+
+.categories-container:hover .numbers{
+    color:black;
 }
 
 .footer{
@@ -385,8 +435,16 @@ h1, h2, h3, h4{
     padding-top: 70px;
 }
 
+.footer h3{
+    margin: 0px 0px 58px 0px;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
 .Aboutus{
-    width: 40%;
+    width: 48%;
     margin: 0px 0px 0px 72px;
 }
 
@@ -395,6 +453,11 @@ h1, h2, h3, h4{
     box-sizing: border-box;
     padding: 19px 0px 0px 0px;
     line-height: 31px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.Aboutus-container a{
+    color: white;
 }
 
 .Aboutus img{
@@ -403,22 +466,46 @@ h1, h2, h3, h4{
 }
 
 .Quicklinks-social{
-    width: 30%;
-    margin-left: 150px
+    width: 18%;
+    margin-left: 68px
 }
 
 .Quicklinks-social a{
     color: #fff;
+    font-size:17px;
+} 
+
+.Quicklinks-social li{
+    margin-top: -8px;
+}
+.latest-posts{
+    width: 24%;
+}
+.latest-postscontainer{
+    margin: -24px 0px 0px 24px;
 }
 
-.Latest-posts{
-    width: 30%;
+.latest-postscontainer p{
+    font-size: 12px;
 }
-
 .footer-container a {
     display: flex;
-    justify-content: space-evenly;
     color: #fff;
+}
+
+.social-midiascontainer{
+    margin: 100px 0px 0px 0px;
+}
+
+.social-midiascontainer p{
+    padding: 0px 0px 0px 21px;
+    margin: 6px 0px 0px 0px;
+    font-size: 17px;
+}
+
+.social-midiascontainer img{
+    width: 24px;
+    height: 24px;
 }
 
 .footer a:hover, .footer h4:hover, footer p:hover{
